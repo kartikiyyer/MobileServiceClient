@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Request Generator</title>
+</head>
+<body>
+Request Generator
+<form action="/Client/generate-request" method="post">
+<table>
+<tr>
+<td>Interval</td>
+<td><input type="radio" name="interval" value="1" checked="checked"/>1 hr<input type="radio" name="interval" value="10"/>10 hours<input type="radio" name="interval" value="24"/>1 day </td>
+</tr>
+<tr>
+<td>Algorithm</td>
+<td><input type="radio" name="algorithm" value="1" checked="checked"/>Bee<input type="radio" name="algorithm" value="2"/>Ant<input type="radio" name="algorithm" value="3"/>Location<input type="radio" name="algorithm" value="4"/>Swarm </td>
+</tr>
+</table>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
