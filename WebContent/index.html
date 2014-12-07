@@ -3,11 +3,14 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Request Generator</title>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataTables.jqueryui.css">
 <script
 	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://code.highcharts.com/highcharts.js"></script>
 <script src="http://code.highcharts.com/modules/exporting.js"></script>
-
+<script
+	src="http://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
 <script src="./js/graphs.js"></script>
 </head>
 <body>
@@ -52,7 +55,7 @@
 	<div id="avgResponseGraph3"
 		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div>
 
-	<div id="avgResponseGraphH1"
+<!-- 	<div id="avgResponseGraphH1"
 		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div>
 	<div id="avgResponseGraphH2"
 		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div>
@@ -60,7 +63,7 @@
 		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div>
 	<div id="avgResponseGraphH4"
 		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div>
-		
+
 	<div id="avgResponseGraphP1"
 		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div>
 	<div id="avgResponseGraphP2"
@@ -69,7 +72,7 @@
 		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div>
 	<div id="avgResponseGraphP3"
 		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div>
-		
+
 	<div id="avgResponseGraphL1"
 		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div>
 	<div id="avgResponseGraphL2"
@@ -77,6 +80,9 @@
 	<div id="avgResponseGraphL3"
 		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div>
 	<div id="avgResponseGraphL4"
-		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div>
+		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div> -->
+	<div id="honeyBeeTableDiv"></div>
+	<div id="locationAwareTableDiv"></div>
 </body>
+
 </html>

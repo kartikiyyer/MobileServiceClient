@@ -54,7 +54,8 @@ public class RequestGeneratorServlet extends HttpServlet {
 		//System.out.println("Algorithm: " + algorithm);
 		
 		Random random = new Random();
-		int sleep = interval * 60 *  1000;
+//		int sleep = interval * 60 *  1000;
+		int sleep = interval * 60 *  100;
 		sleep = sleep / noOfRequests;
 		int[] counters = new int[requestTimes.size()];
 		int i = 1;
@@ -116,7 +117,7 @@ public class RequestGeneratorServlet extends HttpServlet {
 		ram = rams.get(requestType);
 		//System.out.println("Ram: " + ram);
 		latitude = randomDouble(14.385, 62.7475);
-		longitude = randomDouble(-152.2683, -66.2085);
+		longitude = randomDouble(-152.2683, -44.2085);
 		
 		try {
 			String query = String.format("cpu=%s&storage=%s&ram=%s&time=%s&algoIdentifier=%s&requestType=%s&latitude=%s&longitude=%s",
