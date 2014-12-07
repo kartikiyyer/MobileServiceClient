@@ -116,8 +116,8 @@ public class RequestGeneratorServlet extends HttpServlet {
 		//ram =  Math.round(randomRam.nextDouble() * 2.0 * 10.0) / 100.0;
 		ram = rams.get(requestType);
 		//System.out.println("Ram: " + ram);
-		latitude = randomDouble(14.385, 62.7475);
-		longitude = randomDouble(-152.2683, -44.2085);
+		latitude = randomDouble(14.2417, 61.3850);
+		longitude = randomDouble(-170.7197, -71.5101);
 		
 		try {
 			String query = String.format("cpu=%s&storage=%s&ram=%s&time=%s&algoIdentifier=%s&requestType=%s&latitude=%s&longitude=%s",
