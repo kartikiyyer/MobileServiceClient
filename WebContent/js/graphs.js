@@ -296,7 +296,7 @@ $( document ).ready(function() {
 			success: function(msg){
 				//alert(msg);
 				obj1 = jQuery.parseJSON( ''+ msg +'' );
-				plotAvgResponseTimeGraph(obj);
+				//plotAvgResponseTimeGraph(obj);
 
 			},
 			error: function () {
@@ -313,7 +313,7 @@ $( document ).ready(function() {
 			success: function(msg){
 				//alert(msg);
 				obj2 = jQuery.parseJSON( ''+ msg +'' );
-				plotAvgResponseTimeGraph(obj);
+				//plotAvgResponseTimeGraph(obj);
 
 			},
 			error: function () {
@@ -331,7 +331,7 @@ $( document ).ready(function() {
 			success: function(msg){
 				//alert(msg);
 				obj3 = jQuery.parseJSON( ''+ msg +'' );
-				plotAvgResponseTimeGraph(obj);
+				//plotAvgResponseTimeGraph(obj);
 
 			},
 			error: function () {
@@ -348,7 +348,7 @@ $( document ).ready(function() {
 			success: function(msg){
 				//alert(msg);
 				obj4 = jQuery.parseJSON( ''+ msg +'' );
-				plotAvgResponseTimeGraph(obj);
+				//plotAvgResponseTimeGraph(obj);
 
 			},
 			error: function () {
@@ -356,10 +356,12 @@ $( document ).ready(function() {
 			}
 		});
 
-		obj1 = eval("(" + obj1 + ')');
+		/*	obj1 = eval("(" + obj1 + ')');
 		obj2 = eval("(" + obj2 + ')');
 		obj3 = eval("(" + obj3 + ')');
-		obj4 = eval("(" + obj4 + ')');
+		obj4 = eval("(" + obj4 + ')');*/
+
+
 		plotAvgResponseTimeGraphs(obj1,obj2,obj3,obj4);
 
 	}
@@ -748,13 +750,16 @@ $( document ).ready(function() {
 
 		}
 
-		honeyBeeBarDataReq1 = honeyBeeBarDataReq1.substring(0, honeyBeeBarDataReq1.length - 1);
+		alert("Hi");
+		if(obj1.LocReqTypeAvgResTime.length > 0)
+		{
+			honeyBeeBarDataReq1 = honeyBeeBarDataReq1.substring(0, honeyBeeBarDataReq1.length - 1);
+			honeyBeeBarDataReq2 = honeyBeeBarDataReq2.substring(0, honeyBeeBarDataReq2.length - 1);
+			honeyBeeBarDataReq3 = honeyBeeBarDataReq3.substring(0, honeyBeeBarDataReq3.length - 1);
+
+		}
 		honeyBeeBarDataReq1 = honeyBeeBarDataReq1+']';
-
-		honeyBeeBarDataReq2 = honeyBeeBarDataReq2.substring(0, honeyBeeBarDataReq2.length - 1);
 		honeyBeeBarDataReq2 = honeyBeeBarDataReq2+']';
-
-		honeyBeeBarDataReq3 = honeyBeeBarDataReq3.substring(0, honeyBeeBarDataReq3.length - 1);
 		honeyBeeBarDataReq3 = honeyBeeBarDataReq3+']';
 		//alert(honeyBeeBarData);
 		//var temp = JSON.parse(honeyBeeBarData);
@@ -920,14 +925,16 @@ $( document ).ready(function() {
 
 		}
 
-		antBarDataReq1 = antBarDataReq1.substring(0, antBarDataReq1.length - 1);
+		if(obj2.LocReqTypeAvgResTime.length > 0)
+		{
+			antBarDataReq1 = antBarDataReq1.substring(0, antBarDataReq1.length - 1);
+			antBarDataReq2 = antBarDataReq2.substring(0, antBarDataReq2.length - 1);
+			antBarDataReq3 = antBarDataReq3.substring(0, antBarDataReq3.length - 1);
+		}
 		antBarDataReq1 = antBarDataReq1+']';
-
-		antBarDataReq2 = antBarDataReq2.substring(0, antBarDataReq2.length - 1);
 		antBarDataReq2 = antBarDataReq2+']';
-
-		antBarDataReq3 = antBarDataReq3.substring(0, antBarDataReq3.length - 1);
 		antBarDataReq3 = antBarDataReq3+']';
+		
 		//alert(antBarData);
 		//var temp = JSON.parse(antBarData);
 		temp = eval("(" + antBarDataReq1 + ')');
@@ -1091,14 +1098,16 @@ $( document ).ready(function() {
 			}
 
 		}
+		if(obj3.LocReqTypeAvgResTime.length > 0)
+		{
+			locationAwareBarDataReq1 = locationAwareBarDataReq1.substring(0, locationAwareBarDataReq1.length - 1);
+			locationAwareBarDataReq2 = locationAwareBarDataReq2.substring(0, locationAwareBarDataReq2.length - 1);
+			locationAwareBarDataReq3 = locationAwareBarDataReq3.substring(0, locationAwareBarDataReq3.length - 1);
 
-		locationAwareBarDataReq1 = locationAwareBarDataReq1.substring(0, locationAwareBarDataReq1.length - 1);
+		}
+
 		locationAwareBarDataReq1 = locationAwareBarDataReq1+']';
-
-		locationAwareBarDataReq2 = locationAwareBarDataReq2.substring(0, locationAwareBarDataReq2.length - 1);
 		locationAwareBarDataReq2 = locationAwareBarDataReq2+']';
-
-		locationAwareBarDataReq3 = locationAwareBarDataReq3.substring(0, locationAwareBarDataReq3.length - 1);
 		locationAwareBarDataReq3 = locationAwareBarDataReq3+']';
 		//alert(locationAwareBarData);
 		//var temp = JSON.parse(locationAwareBarData);
@@ -1263,14 +1272,16 @@ $( document ).ready(function() {
 			}
 
 		}
+		if(obj4.LocReqTypeAvgResTime.length > 0)
+		{
+			psoBarDataReq1 = psoBarDataReq1.substring(0, psoBarDataReq1.length - 1);
+			psoBarDataReq2 = psoBarDataReq2.substring(0, psoBarDataReq2.length - 1);
+			psoBarDataReq3 = psoBarDataReq3.substring(0, psoBarDataReq3.length - 1);
 
-		psoBarDataReq1 = psoBarDataReq1.substring(0, psoBarDataReq1.length - 1);
+		}
+
 		psoBarDataReq1 = psoBarDataReq1+']';
-
-		psoBarDataReq2 = psoBarDataReq2.substring(0, psoBarDataReq2.length - 1);
 		psoBarDataReq2 = psoBarDataReq2+']';
-
-		psoBarDataReq3 = psoBarDataReq3.substring(0, psoBarDataReq3.length - 1);
 		psoBarDataReq3 = psoBarDataReq3+']';
 		//alert(psoBarData);
 		//var temp = JSON.parse(psoBarData);
@@ -1400,7 +1411,10 @@ $( document ).ready(function() {
 			url: url+temp,
 			async:false,
 			success: function(msg){
+				alert(msg);
 				obj1 = jQuery.parseJSON( ''+ msg +'' );
+
+				plotAvgResponseTimeGraphHoneyBee(obj1);
 			},
 			error: function () {
 				alert("Error");
@@ -1415,7 +1429,10 @@ $( document ).ready(function() {
 			url: url+temp,
 			async:false,
 			success: function(msg){
+				alert(msg);
 				obj2 = jQuery.parseJSON( ''+ msg +'' );
+
+				plotAvgResponseTimeGraphAnt(obj2);	
 			},
 			error: function () {
 				alert("Error");
@@ -1430,7 +1447,10 @@ $( document ).ready(function() {
 			url: url+temp,
 			async:false,
 			success: function(msg){
+				alert(msg);
 				obj3 = jQuery.parseJSON( ''+ msg +'' );
+
+				plotAvgResponseTimeGraphPSO(obj3);
 			},
 			error: function () {
 				alert("Error");
@@ -1446,7 +1466,9 @@ $( document ).ready(function() {
 			url: url+temp,
 			async:false,
 			success: function(msg){
+				alert(msg);
 				obj4 = jQuery.parseJSON( ''+ msg +'' );
+				plotAvgResponseTimeGraphLocationAware(obj4);
 			},
 			error: function () {
 				alert("Error");
@@ -1455,10 +1477,6 @@ $( document ).ready(function() {
 		//
 
 
-		plotAvgResponseTimeGraphHoneyBee(obj1);
-		plotAvgResponseTimeGraphAnt(obj2);	
-		plotAvgResponseTimeGraphPSO(obj3);
-		plotAvgResponseTimeGraphLocationAware(obj4);
 	}
 
 	//populate honey bee pie chart
@@ -2031,7 +2049,7 @@ $( document ).ready(function() {
 
 	$("#getGraphs").click(function()
 			{
-
+		/*
 		var obj1 = '{"ReqNoReqTypeRespTime":[[1,1,52.918],[2,1,60.186],[3,1,64.915],[4,1,71.745],[5,1,77.06],[6,1,86.008],[7,2,43.953],[8,2,45.258],[9,2,48.315],[10,2,49.774],[11,2,52.579],[12,3,52.114]]}';
 		var obj2 = '{"ReqNoReqTypeRespTime":[[1,1,52.918],[2,1,60.186],[3,1,64.915],[4,1,71.745],[5,1,77.06],[6,1,86.008],[7,2,43.953],[8,2,45.258],[9,2,48.315],[10,2,49.774],[11,2,52.579],[12,3,52.114]]}';
 		var obj3 = '{"ReqNoReqTypeRespTime":[[1,1,52.918],[2,1,60.186],[3,1,64.915],[4,1,71.745],[5,1,77.06],[6,1,86.008],[7,2,43.953],[8,2,45.258],[9,2,48.315],[10,2,49.774],[11,2,52.579],[12,3,52.114]]}';
@@ -2040,11 +2058,11 @@ $( document ).ready(function() {
 		obj1 = eval("(" + obj1 + ')');
 		obj2 = eval("(" + obj2 + ')');
 		obj3 = eval("(" + obj3 + ')');
-		obj4 = eval("(" + obj4 + ')');
+		obj4 = eval("(" + obj4 + ')');*/
 
-		//getResponseTimeGraphs();
+		getResponseTimeGraphs();
 		getLocationGraph();
-		//getAvgResponseTimeGraphs();
+		getAvgResponseTimeGraphs();
 		populateHoneyBeeTable();
 		populateAntTable();
 		populateLocationAwareTable();
