@@ -18,7 +18,7 @@ public class RequestGeneratorServlet extends HttpServlet {
 	HashMap<Integer, Double> cpus = new HashMap<Integer, Double>();
 	HashMap<Integer, Double> hds = new HashMap<Integer, Double>();
 	HashMap<Integer, Double> rams = new HashMap<Integer, Double>();
-//	String server = "localhost";
+	//String server = "localhost";
 	String server = "ubuntu-mc-1-cmpe281.cloudapp.net";
 	//String client  = "localhost";
 	int noOfRequests = 99;
@@ -50,7 +50,7 @@ public class RequestGeneratorServlet extends HttpServlet {
 		
 		int interval = Integer.parseInt(request.getParameter("interval"));
 		int algorithm = Integer.parseInt(request.getParameter("algorithm"));
-		
+		noOfRequests = Integer.parseInt(request.getParameter("request"));
 		//System.out.println("Interval: " + interval);
 		//System.out.println("Algorithm: " + algorithm);
 		

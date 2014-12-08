@@ -1,0 +1,260 @@
+body{
+overflow-x: hidden;
+	margin:0px;
+	background:#ffffff url('img/bgforslider.jpg') repeat-x scroll top center;
+		background-size: 100% 650px;
+		background-color: #F6F6F6
+}
+
+#navigation{
+	position: relative;
+	top:30px;
+padding-left: 100px;
+}
+
+#navigation a{
+	padding:15px;
+	color:white;
+	text-decoration: none;
+
+}
+
+.bgimage{
+	position: absolute;
+	display: block;
+	top: 0%;
+	height: 100%;
+    width: 100%;
+    border-image-repeat: repeat-x;
+    opacity: 1;
+  background-size: cover;
+    overflow: hidden;
+    z-index:-1;
+}
+
+.samsung{
+	position: absolute;
+	display: block;
+	top: 80px;
+	float:right;
+	height: 550px;
+    width: 350px;
+    opacity: 1;
+  background-size: cover;
+    overflow: hidden;
+    z-index:10;
+    left:800px;
+}
+
+#tagline{
+color: white;
+font-size: 75px;
+left: 100px;
+top: 160px;
+position: absolute;
+font-weight: 700;
+text-shadow: 0 1px 0 black;
+}
+
+
+#mainForm #right{
+	position: absolute;
+float: left;
+left: 885px;
+display: block;
+top:320px;
+    z-index:100;
+}
+
+#mainForm section{
+float:left;
+margin-right: 20px;
+color:white;
+    z-index:100;
+
+}
+
+#mainForm #center{
+	position: absolute;
+float: left;
+left: 865px;
+display: block;
+top:470px;
+    z-index:100;
+}
+
+.styled-button-1 {
+	-webkit-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	-moz-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	color:#333;
+	background-color:#FA2;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:none;
+	font-family:'Helvetica Neue',Arial,sans-serif;
+	font-size:16px;
+	font-weight:700;
+	height:32px;
+	padding:4px 16px;
+	text-shadow:#FE6 0 1px 0
+	    z-index:100;
+}
+
+clouds{
+	padding: 100px 100px;
+}
+
+/*Time to finalise the cloud shape*/
+.cloud {
+	top:200px;
+	width: 200px; height: 60px;
+	background: #fff;
+	
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	
+	position: relative; 
+}
+
+.cloud:before, .cloud:after {
+	content: '';
+	position: absolute;
+	
+	background: #fff;
+	width: 100px; height: 80px;
+	position: absolute; top: -15px; left: 10px;
+	
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+	width: 120px; height: 120px;top:150px;
+	top: -55px; left: auto; right: 15px;
+}
+
+/*Time to animate*/
+.x1 {
+-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	transform: scale(0.9);
+	opacity: 0.6;
+	-webkit-animation: moveclouds 15s linear infinite;
+	-moz-animation: moveclouds 15s linear infinite;
+	-o-animation: moveclouds 15s linear infinite;
+}
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+	left: 200px;top:-400px
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+	opacity: 0.6; /*opacity proportional to the size*/
+	
+	/*Speed will also be proportional to the size and opacity*/
+	/*More the speed. Less the time in 's' = seconds*/
+	-webkit-animation: moveclouds 25s linear infinite;
+	-moz-animation: moveclouds 25s linear infinite;
+	-o-animation: moveclouds 25s linear infinite;
+}
+
+.x3 {
+	left: -250px; top: -600px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+.x4 {
+	left: 470px; top: -100px;
+	
+	-webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	transform: scale(0.75);
+	opacity: 0.75; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 18s linear infinite;
+	-moz-animation: moveclouds 18s linear infinite;
+	-o-animation: moveclouds 18s linear infinite;
+}
+
+.x5 {
+	left: -150px; top: -150px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.4; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+
+.field_element {
+    font-family: 'Lato', sans-serif;
+/*font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:300; font-stretch:normal;*/
+    color: #5d5d5d;
+    outline: none;
+    font-size: 11px;
+    font-weight: 300;
+    width: 74px;
+   
+    height: 29px;
+    background-color: #ffffff;
+    border: 1px solid #DDDDDD;
+    padding: 3px;
+    border-top-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+}
+
+.field_element select {
+    height: 80px;
+    overflow: scroll;
+}
+
+.field_element option {
+    padding: 0px 3px 0px 3px;
+    height: 80px;
+    overflow: scroll;
+    font-weight: 300;
+}

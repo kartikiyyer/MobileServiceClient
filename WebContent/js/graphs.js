@@ -1,5 +1,7 @@
 var globalurl ="http://ubuntu-mc-1-cmpe281.cloudapp.net:8080/LoadBalancer/graphs/";
-
+//var globalurl ="http://localhost:8080/LoadBalancer/graphs/";
+var noOfRequests = 99;
+//sessionStorage.setItem("algoIdentifier", 2);
 $( document ).ready(function() {
 	//var responseData = '{"ReqNoReqTypeRespTime":[[1,1,52.918],[2,1,60.186],[3,1,64.915],[4,1,71.745],[5,1,77.06],[6,1,86.008],[7,2,43.953],[8,2,45.258],[9,2,48.315],[10,2,49.774],[11,2,52.579],[12,2,52.114]]}';
 	//var obj = JSON.parse(responseData);
@@ -159,12 +161,15 @@ $( document ).ready(function() {
 				text: 'Request Type 1',
 				x: -20
 			},
+			xAxis:{
+				tickInterval : 1
+			},
 			yAxis: {
 				title: {
 					text: 'Response Time(Seconds)'
 				},
 				plotLines: [{
-					value: 0,
+					value: 1,
 					width: 1,
 					color: '#808080'
 				}]
@@ -203,12 +208,15 @@ $( document ).ready(function() {
 				text: 'Request Type 2',
 				x: -20
 			},
+			xAxis:{
+				tickInterval : 1
+			},
 			yAxis: {
 				title: {
 					text: 'Response Time(Seconds)'
 				},
 				plotLines: [{
-					value: 0,
+					value: 1,
 					width: 1,
 					color: '#808080'
 				}]
@@ -247,12 +255,15 @@ $( document ).ready(function() {
 				text: 'Request Type 3',
 				x: -20
 			},
+			xAxis:{
+				tickInterval : 1
+			},
 			yAxis: {
 				title: {
 					text: 'Response Time(Seconds)'
 				},
 				plotLines: [{
-					value: 0,
+					value: 1,
 					width: 1,
 					color: '#808080'
 				}]
@@ -513,13 +524,17 @@ $( document ).ready(function() {
 				x: -20
 			},
 
+			xAxis:{
+				tickInterval : 1
+			},
 
 			yAxis: {
 				title: {
 					text: 'Location'
 				},
+				tickInterval : 1,
 				plotLines: [{
-					value: 0,
+					value: 1,
 					width: 1,
 					color: '#808080'
 				}]
@@ -558,12 +573,16 @@ $( document ).ready(function() {
 				x: -20
 			},
 
+			xAxis:{
+				tickInterval : 1
+			},
 			yAxis: {
 				title: {
 					text: 'Location'
 				},
+				tickInterval : 1,
 				plotLines: [{
-					value: 0,
+					value: 1,
 					width: 1,
 					color: '#808080'
 				}]
@@ -600,13 +619,16 @@ $( document ).ready(function() {
 				text: 'Request Type 3',
 				x: -20
 			},
-
+			xAxis:{
+				tickInterval : 1
+			},
 			yAxis: {
 				title: {
 					text: 'Location'
 				},
+				tickInterval : 1,
 				plotLines: [{
-					value: 0,
+					value: 1,
 					width: 1,
 					color: '#808080'
 				}]
@@ -779,8 +801,8 @@ $( document ).ready(function() {
 				type: 'column'
 			},
 			title: {
-	            text: 'HoneyBee'
-	        },
+				text: 'HoneyBee'
+			},
 			subtitle: {
 				text: 'Request Type 1'
 			},
@@ -818,8 +840,8 @@ $( document ).ready(function() {
 				type: 'column'
 			},
 			title: {
-	            text: 'HoneyBee'
-	        },
+				text: 'HoneyBee'
+			},
 			subtitle: {
 				text: 'Request Type 2'
 			},
@@ -857,8 +879,8 @@ $( document ).ready(function() {
 				type: 'column'
 			},
 			title: {
-	            text: 'HoneyBee'
-	        },
+				text: 'HoneyBee'
+			},
 			subtitle: {
 				text: 'Request Type 3'
 			},
@@ -963,8 +985,8 @@ $( document ).ready(function() {
 				type: 'column'
 			},
 			title: {
-	            text: 'Ant'
-	        },
+				text: 'Ant'
+			},
 			subtitle: {
 				text: 'Request Type 1'
 			},
@@ -1002,8 +1024,8 @@ $( document ).ready(function() {
 				type: 'column'
 			},
 			title: {
-	            text: 'Ant'
-	        },
+				text: 'Ant'
+			},
 			subtitle: {
 				text: 'Request Type 2'
 			},
@@ -1041,8 +1063,8 @@ $( document ).ready(function() {
 				type: 'column'
 			},
 			title: {
-	            text: 'Ant'
-	        },
+				text: 'Ant'
+			},
 			subtitle: {
 				text: 'Request Type 3'
 			},
@@ -1147,8 +1169,8 @@ $( document ).ready(function() {
 				type: 'column'
 			},
 			title: {
-	            text: 'Location Aware'
-	        },
+				text: 'Location Aware'
+			},
 			subtitle: {
 				text: 'Request Type 1'
 			},
@@ -1186,8 +1208,8 @@ $( document ).ready(function() {
 				type: 'column'
 			},
 			title: {
-	            text: 'Location Aware'
-	        },
+				text: 'Location Aware'
+			},
 			subtitle: {
 				text: 'Request Type 2'
 			},
@@ -1225,8 +1247,8 @@ $( document ).ready(function() {
 				type: 'column'
 			},
 			title: {
-	            text: 'Location Aware'
-	        },
+				text: 'Location Aware'
+			},
 			subtitle: {
 				text: 'Request Type 3'
 			},
@@ -1331,8 +1353,8 @@ $( document ).ready(function() {
 				type: 'column'
 			},
 			title: {
-	            text: 'PSO'
-	        },
+				text: 'PSO'
+			},
 			subtitle: {
 				text: 'Request Type 1'
 			},
@@ -1370,8 +1392,8 @@ $( document ).ready(function() {
 				type: 'column'
 			},
 			title: {
-	            text: 'PSO'
-	        },
+				text: 'PSO'
+			},
 			subtitle: {
 				text: 'Request Type 2'
 			},
@@ -1409,8 +1431,8 @@ $( document ).ready(function() {
 				type: 'column'
 			},
 			title: {
-	            text: 'PSO'
-	        },
+				text: 'PSO'
+			},
 			subtitle: {
 				text: 'Request Type 3'
 			},
@@ -1905,7 +1927,7 @@ $( document ).ready(function() {
 						            ],
 						            "bFilter": false
 					} );   
-					
+
 					//
 
 				},
@@ -1914,7 +1936,7 @@ $( document ).ready(function() {
 				}
 			});
 		}
-		
+
 
 	}
 
@@ -2091,13 +2113,1960 @@ $( document ).ready(function() {
 
 	}
 
-	function getPieChartHoneyBee()
-	{
 
+	function populateGuageChartsLocation1()
+	{
+		var gaugeOptions = {
+
+				chart: {
+					type: 'solidgauge'
+				},
+
+				title: null,
+
+				pane: {
+					center: ['50%', '85%'],
+					size: '140%',
+					startAngle: -90,
+					endAngle: 90,
+					background: {
+						backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || '#EEE',
+						innerRadius: '60%',
+						outerRadius: '100%',
+						shape: 'arc'
+					}
+				},
+
+				tooltip: {
+					enabled: false
+				},
+
+				// the value axis
+				yAxis: {
+					stops: [
+					        [0.1, '#55BF3B'], // green
+					        [0.5, '#DDDF0D'], // yellow
+					        [0.9, '#DF5353'] // red
+					        ],
+					        lineWidth: 0,
+					        minorTickInterval: null,
+					        tickPixelInterval: 400,
+					        tickWidth: 0,
+					        title: {
+					        	y: -70
+					        },
+					        labels: {
+					        	y: 16
+					        }
+				},
+
+				plotOptions: {
+					solidgauge: {
+						dataLabels: {
+							y: 5,
+							borderWidth: 0,
+							useHTML: true
+						}
+					}
+				}
+		};
+
+		// The cpu gauge
+		$('#container-cpu-location1').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 2,
+				title: {
+					text: 'CPU'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'CPU',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.2f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GHz</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GHz'
+				}
+			}]
+
+		}));
+
+		// The cpu gauge
+		$('#container-ram-location1').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 1.0,
+				title: {
+					text: 'RAM'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'RAM',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.3f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GB</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GB'
+				}
+			}]
+
+		}));
+
+		// The cpu gauge
+		$('#container-storage-location1').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 0.5,
+				title: {
+					text: 'Storage'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'Storage',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.3f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GB</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GB'
+				}
+			}]
+
+		}));
+
+		// Bring life to the dials
+		setInterval(function () {
+			// CPU
+			var chart = $('#container-cpu-location1').highcharts(),
+			point,
+			newVal,inc1,inc2,inc3,
+			inc;
+
+			
+			var url = globalurl+"currResUtil?algoIdentifier="+sessionStorage.getItem("algoIdentifier",2)+"&locationNo=1";
+			$.ajax({
+				type: "GET",
+				url: url,
+				async:false,
+				success: function(msg){
+					//alert(msg);
+					obj = jQuery.parseJSON( ''+ msg +'' );
+					inc1=obj.ResourceUtil[0];
+					inc2=obj.ResourceUtil[2]/1000;
+					inc3=obj.ResourceUtil[1]/1000;
+
+				},
+				error: function () {
+					alert("Error");
+				}
+			});
+			
+			if (chart) {
+				point = chart.series[0].points[0];
+				
+
+				inc = inc1;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 1) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc1);
+			}
+
+			// RAM
+			chart = $('#container-ram-location1').highcharts();
+			if (chart) {
+				point = chart.series[0].points[0];
+				inc = inc2;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 0.768) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc2);
+			}
+
+			// Storage
+			chart = $('#container-storage-location1').highcharts();
+			if (chart) {
+				point = chart.series[0].points[0];
+				inc = inc3;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 7) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc3);
+			}
+		}, 2000);
 	}
 
+	
+	function populateGuageChartsLocation2()
+	{
+		var gaugeOptions = {
+
+				chart: {
+					type: 'solidgauge'
+				},
+
+				title: null,
+
+				pane: {
+					center: ['50%', '85%'],
+					size: '140%',
+					startAngle: -90,
+					endAngle: 90,
+					background: {
+						backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || '#EEE',
+						innerRadius: '60%',
+						outerRadius: '100%',
+						shape: 'arc'
+					}
+				},
+
+				tooltip: {
+					enabled: false
+				},
+
+				// the value axis
+				yAxis: {
+					stops: [
+					        [0.1, '#55BF3B'], // green
+					        [0.5, '#DDDF0D'], // yellow
+					        [0.9, '#DF5353'] // red
+					        ],
+					        lineWidth: 0,
+					        minorTickInterval: null,
+					        tickPixelInterval: 400,
+					        tickWidth: 0,
+					        title: {
+					        	y: -70
+					        },
+					        labels: {
+					        	y: 16
+					        }
+				},
+
+				plotOptions: {
+					solidgauge: {
+						dataLabels: {
+							y: 5,
+							borderWidth: 0,
+							useHTML: true
+						}
+					}
+				}
+		};
+
+		// The cpu gauge
+		$('#container-cpu-location2').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 2,
+				title: {
+					text: 'CPU'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'CPU',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.2f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GHz</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GHz'
+				}
+			}]
+
+		}));
+
+		// The cpu gauge
+		$('#container-ram-location2').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 1.0,
+				title: {
+					text: 'RAM'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'RAM',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.3f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GB</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GB'
+				}
+			}]
+
+		}));
+
+		// The cpu gauge
+		$('#container-storage-location2').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 0.5,
+				title: {
+					text: 'Storage'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'Storage',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.3f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GB</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GB'
+				}
+			}]
+
+		}));
+
+		// Bring life to the dials
+		setInterval(function () {
+			// CPU
+			var chart = $('#container-cpu-location2').highcharts(),
+			point,
+			newVal,inc1,inc2,inc3,
+			inc;
+
+			
+			var url = globalurl+"currResUtil?algoIdentifier="+sessionStorage.getItem("algoIdentifier",2)+"&locationNo=2";
+			$.ajax({
+				type: "GET",
+				url: url,
+				async:false,
+				success: function(msg){
+					//alert(msg);
+					obj = jQuery.parseJSON( ''+ msg +'' );
+					inc1=obj.ResourceUtil[0];
+					inc2=obj.ResourceUtil[2]/1000;
+					inc3=obj.ResourceUtil[1]/1000;
+
+				},
+				error: function () {
+					alert("Error");
+				}
+			});
+			
+			if (chart) {
+				point = chart.series[0].points[0];
+				
+
+				inc = inc1;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 1) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc1);
+			}
+
+			// RAM
+			chart = $('#container-ram-location2').highcharts();
+			if (chart) {
+				point = chart.series[0].points[0];
+				inc = inc2;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 0.768) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc2);
+			}
+
+			// Storage
+			chart = $('#container-storage-location2').highcharts();
+			if (chart) {
+				point = chart.series[0].points[0];
+				inc = inc3;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 7) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc3);
+			}
+		}, 2000);
+	}
+	function populateGuageChartsLocation3()
+	{
+		var gaugeOptions = {
+
+				chart: {
+					type: 'solidgauge'
+				},
+
+				title: null,
+
+				pane: {
+					center: ['50%', '85%'],
+					size: '140%',
+					startAngle: -90,
+					endAngle: 90,
+					background: {
+						backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || '#EEE',
+						innerRadius: '60%',
+						outerRadius: '100%',
+						shape: 'arc'
+					}
+				},
+
+				tooltip: {
+					enabled: false
+				},
+
+				// the value axis
+				yAxis: {
+					stops: [
+					        [0.1, '#55BF3B'], // green
+					        [0.5, '#DDDF0D'], // yellow
+					        [0.9, '#DF5353'] // red
+					        ],
+					        lineWidth: 0,
+					        minorTickInterval: null,
+					        tickPixelInterval: 400,
+					        tickWidth: 0,
+					        title: {
+					        	y: -70
+					        },
+					        labels: {
+					        	y: 16
+					        }
+				},
+
+				plotOptions: {
+					solidgauge: {
+						dataLabels: {
+							y: 5,
+							borderWidth: 0,
+							useHTML: true
+						}
+					}
+				}
+		};
+
+		// The cpu gauge
+		$('#container-cpu-location3').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 2,
+				title: {
+					text: 'CPU'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'CPU',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.2f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GHz</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GHz'
+				}
+			}]
+
+		}));
+
+		// The cpu gauge
+		$('#container-ram-location3').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 2.0,
+				title: {
+					text: 'RAM'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'RAM',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.3f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GB</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GB'
+				}
+			}]
+
+		}));
+
+		// The cpu gauge
+		$('#container-storage-location3').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 0.5,
+				title: {
+					text: 'Storage'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'Storage',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.3f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GB</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GB'
+				}
+			}]
+
+		}));
+
+		// Bring life to the dials
+		setInterval(function () {
+			// CPU
+			var chart = $('#container-cpu-location3').highcharts(),
+			point,
+			newVal,inc1,inc2,inc3,
+			inc;
+
+			
+			var url = globalurl+"currResUtil?algoIdentifier="+sessionStorage.getItem("algoIdentifier",2)+"&locationNo=3";
+			$.ajax({
+				type: "GET",
+				url: url,
+				async:false,
+				success: function(msg){
+					//alert(msg);
+					obj = jQuery.parseJSON( ''+ msg +'' );
+					inc1=obj.ResourceUtil[0];
+					inc2=obj.ResourceUtil[2]/1000;
+					inc3=obj.ResourceUtil[1]/1000;
+
+				},
+				error: function () {
+					alert("Error");
+				}
+			});
+			
+			if (chart) {
+				point = chart.series[0].points[0];
+				
+
+				inc = inc1;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 1) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc1);
+			}
+
+			// RAM
+			chart = $('#container-ram-location3').highcharts();
+			if (chart) {
+				point = chart.series[0].points[0];
+				inc = inc2;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 0.768) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc2);
+			}
+
+			// Storage
+			chart = $('#container-storage-location3').highcharts();
+			if (chart) {
+				point = chart.series[0].points[0];
+				inc = inc3;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 7) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc3);
+			}
+		}, 2000);
+	}
+	function populateGuageChartsLocation4()
+	{
+		var gaugeOptions = {
+
+				chart: {
+					type: 'solidgauge'
+				},
+
+				title: null,
+
+				pane: {
+					center: ['50%', '85%'],
+					size: '140%',
+					startAngle: -90,
+					endAngle: 90,
+					background: {
+						backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || '#EEE',
+						innerRadius: '60%',
+						outerRadius: '100%',
+						shape: 'arc'
+					}
+				},
+
+				tooltip: {
+					enabled: false
+				},
+
+				// the value axis
+				yAxis: {
+					stops: [
+					        [0.1, '#55BF3B'], // green
+					        [0.5, '#DDDF0D'], // yellow
+					        [0.9, '#DF5353'] // red
+					        ],
+					        lineWidth: 0,
+					        minorTickInterval: null,
+					        tickPixelInterval: 400,
+					        tickWidth: 0,
+					        title: {
+					        	y: -70
+					        },
+					        labels: {
+					        	y: 16
+					        }
+				},
+
+				plotOptions: {
+					solidgauge: {
+						dataLabels: {
+							y: 5,
+							borderWidth: 0,
+							useHTML: true
+						}
+					}
+				}
+		};
+
+		// The cpu gauge
+		$('#container-cpu-location4').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 2,
+				title: {
+					text: 'CPU'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'CPU',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.2f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GHz</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GHz'
+				}
+			}]
+
+		}));
+
+		// The cpu gauge
+		$('#container-ram-location4').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 1.0,
+				title: {
+					text: 'RAM'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'RAM',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.3f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GB</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GB'
+				}
+			}]
+
+		}));
+
+		// The cpu gauge
+		$('#container-storage-location4').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 0.5,
+				title: {
+					text: 'Storage'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'Storage',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.3f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GB</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GB'
+				}
+			}]
+
+		}));
+
+		// Bring life to the dials
+		setInterval(function () {
+			// CPU
+			var chart = $('#container-cpu-location4').highcharts(),
+			point,
+			newVal,inc1,inc2,inc3,
+			inc;
+
+			
+			var url = globalurl+"currResUtil?algoIdentifier="+sessionStorage.getItem("algoIdentifier",2)+"&locationNo=4";
+			$.ajax({
+				type: "GET",
+				url: url,
+				async:false,
+				success: function(msg){
+					//alert(msg);
+					obj = jQuery.parseJSON( ''+ msg +'' );
+					inc1=obj.ResourceUtil[0];
+					inc2=obj.ResourceUtil[2]/1000;
+					inc3=obj.ResourceUtil[1]/1000;
+
+				},
+				error: function () {
+					alert("Error");
+				}
+			});
+			
+			if (chart) {
+				point = chart.series[0].points[0];
+				
+
+				inc = inc1;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 1) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc1);
+			}
+
+			// RAM
+			chart = $('#container-ram-location4').highcharts();
+			if (chart) {
+				point = chart.series[0].points[0];
+				inc = inc2;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 0.768) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc2);
+			}
+
+			// Storage
+			chart = $('#container-storage-location4').highcharts();
+			if (chart) {
+				point = chart.series[0].points[0];
+				inc = inc3;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 7) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc3);
+			}
+		}, 2000);
+	}
+	function populateGuageChartsLocation5()
+	{
+		var gaugeOptions = {
+
+				chart: {
+					type: 'solidgauge'
+				},
+
+				title: null,
+
+				pane: {
+					center: ['50%', '85%'],
+					size: '140%',
+					startAngle: -90,
+					endAngle: 90,
+					background: {
+						backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || '#EEE',
+						innerRadius: '60%',
+						outerRadius: '100%',
+						shape: 'arc'
+					}
+				},
+
+				tooltip: {
+					enabled: false
+				},
+
+				// the value axis
+				yAxis: {
+					stops: [
+					        [0.1, '#55BF3B'], // green
+					        [0.5, '#DDDF0D'], // yellow
+					        [0.9, '#DF5353'] // red
+					        ],
+					        lineWidth: 0,
+					        minorTickInterval: null,
+					        tickPixelInterval: 400,
+					        tickWidth: 0,
+					        title: {
+					        	y: -70
+					        },
+					        labels: {
+					        	y: 16
+					        }
+				},
+
+				plotOptions: {
+					solidgauge: {
+						dataLabels: {
+							y: 5,
+							borderWidth: 0,
+							useHTML: true
+						}
+					}
+				}
+		};
+
+		// The cpu gauge
+		$('#container-cpu-location5').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 2,
+				title: {
+					text: 'CPU'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'CPU',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.2f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GHz</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GHz'
+				}
+			}]
+
+		}));
+
+		// The cpu gauge
+		$('#container-ram-location5').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 1.0,
+				title: {
+					text: 'RAM'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'RAM',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.3f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GB</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GB'
+				}
+			}]
+
+		}));
+
+		// The cpu gauge
+		$('#container-storage-location5').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 0.5,
+				title: {
+					text: 'Storage'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'Storage',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.3f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GB</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GB'
+				}
+			}]
+
+		}));
+
+		// Bring life to the dials
+		setInterval(function () {
+			// CPU
+			var chart = $('#container-cpu-location5').highcharts(),
+			point,
+			newVal,inc1,inc2,inc3,
+			inc;
+
+			
+			var url = globalurl+"currResUtil?algoIdentifier="+sessionStorage.getItem("algoIdentifier",2)+"&locationNo=5";
+			$.ajax({
+				type: "GET",
+				url: url,
+				async:false,
+				success: function(msg){
+					//alert(msg);
+					obj = jQuery.parseJSON( ''+ msg +'' );
+					inc1=obj.ResourceUtil[0];
+					inc2=obj.ResourceUtil[2]/1000;
+					inc3=obj.ResourceUtil[1]/1000;
+
+				},
+				error: function () {
+					alert("Error");
+				}
+			});
+			
+			if (chart) {
+				point = chart.series[0].points[0];
+				
+
+				inc = inc1;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 1) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc1);
+			}
+
+			// RAM
+			chart = $('#container-ram-location5').highcharts();
+			if (chart) {
+				point = chart.series[0].points[0];
+				inc = inc2;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 0.768) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc2);
+			}
+
+			// Storage
+			chart = $('#container-storage-location5').highcharts();
+			if (chart) {
+				point = chart.series[0].points[0];
+				inc = inc3;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 7) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc3);
+			}
+		}, 2000);
+	}
+	function populateGuageChartsLocation6()
+	{
+		var gaugeOptions = {
+
+				chart: {
+					type: 'solidgauge'
+				},
+
+				title: null,
+
+				pane: {
+					center: ['50%', '85%'],
+					size: '140%',
+					startAngle: -90,
+					endAngle: 90,
+					background: {
+						backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || '#EEE',
+						innerRadius: '60%',
+						outerRadius: '100%',
+						shape: 'arc'
+					}
+				},
+
+				tooltip: {
+					enabled: false
+				},
+
+				// the value axis
+				yAxis: {
+					stops: [
+					        [0.1, '#55BF3B'], // green
+					        [0.5, '#DDDF0D'], // yellow
+					        [0.9, '#DF5353'] // red
+					        ],
+					        lineWidth: 0,
+					        minorTickInterval: null,
+					        tickPixelInterval: 400,
+					        tickWidth: 0,
+					        title: {
+					        	y: -70
+					        },
+					        labels: {
+					        	y: 16
+					        }
+				},
+
+				plotOptions: {
+					solidgauge: {
+						dataLabels: {
+							y: 5,
+							borderWidth: 0,
+							useHTML: true
+						}
+					}
+				}
+		};
+
+		// The cpu gauge
+		$('#container-cpu-location6').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 2,
+				title: {
+					text: 'CPU'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'CPU',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.2f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GHz</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GHz'
+				}
+			}]
+
+		}));
+
+		// The cpu gauge
+		$('#container-ram-location6').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 2.0,
+				title: {
+					text: 'RAM'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'RAM',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.3f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GB</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GB'
+				}
+			}]
+
+		}));
+
+		// The cpu gauge
+		$('#container-storage-location6').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 0.5,
+				title: {
+					text: 'Storage'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'Storage',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.3f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GB</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GB'
+				}
+			}]
+
+		}));
+
+		// Bring life to the dials
+		setInterval(function () {
+			// CPU
+			var chart = $('#container-cpu-location6').highcharts(),
+			point,
+			newVal,inc1,inc2,inc3,
+			inc;
+
+			
+			var url = globalurl+"currResUtil?algoIdentifier="+sessionStorage.getItem("algoIdentifier",2)+"&locationNo=6";
+			$.ajax({
+				type: "GET",
+				url: url,
+				async:false,
+				success: function(msg){
+					//alert(msg);
+					obj = jQuery.parseJSON( ''+ msg +'' );
+					inc1=obj.ResourceUtil[0];
+					inc2=obj.ResourceUtil[2]/1000;
+					inc3=obj.ResourceUtil[1]/1000;
+
+				},
+				error: function () {
+					alert("Error");
+				}
+			});
+			
+			if (chart) {
+				point = chart.series[0].points[0];
+				
+
+				inc = inc1;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 1) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc1);
+			}
+
+			// RAM
+			chart = $('#container-ram-location6').highcharts();
+			if (chart) {
+				point = chart.series[0].points[0];
+				inc = inc2;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 0.768) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc2);
+			}
+
+			// Storage
+			chart = $('#container-storage-location6').highcharts();
+			if (chart) {
+				point = chart.series[0].points[0];
+				inc = inc3;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 7) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc3);
+			}
+		}, 2000);
+	}
+	function populateGuageChartsLocation7()
+	{
+		var gaugeOptions = {
+
+				chart: {
+					type: 'solidgauge'
+				},
+
+				title: null,
+
+				pane: {
+					center: ['50%', '85%'],
+					size: '140%',
+					startAngle: -90,
+					endAngle: 90,
+					background: {
+						backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || '#EEE',
+						innerRadius: '60%',
+						outerRadius: '100%',
+						shape: 'arc'
+					}
+				},
+
+				tooltip: {
+					enabled: false
+				},
+
+				// the value axis
+				yAxis: {
+					stops: [
+					        [0.1, '#55BF3B'], // green
+					        [0.5, '#DDDF0D'], // yellow
+					        [0.9, '#DF5353'] // red
+					        ],
+					        lineWidth: 0,
+					        minorTickInterval: null,
+					        tickPixelInterval: 400,
+					        tickWidth: 0,
+					        title: {
+					        	y: -70
+					        },
+					        labels: {
+					        	y: 16
+					        }
+				},
+
+				plotOptions: {
+					solidgauge: {
+						dataLabels: {
+							y: 5,
+							borderWidth: 0,
+							useHTML: true
+						}
+					}
+				}
+		};
+
+		// The cpu gauge
+		$('#container-cpu-location7').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 2,
+				title: {
+					text: 'CPU'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'CPU',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.2f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GHz</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GHz'
+				}
+			}]
+
+		}));
+
+		// The cpu gauge
+		$('#container-ram-location7').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 1.0,
+				title: {
+					text: 'RAM'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'RAM',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.3f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GB</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GB'
+				}
+			}]
+
+		}));
+
+		// The cpu gauge
+		$('#container-storage-location7').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 0.5,
+				title: {
+					text: 'Storage'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'Storage',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.3f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GB</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GB'
+				}
+			}]
+
+		}));
+
+		// Bring life to the dials
+		setInterval(function () {
+			// CPU
+			var chart = $('#container-cpu-location7').highcharts(),
+			point,
+			newVal,inc1,inc2,inc3,
+			inc;
+
+			
+			var url = globalurl+"currResUtil?algoIdentifier="+sessionStorage.getItem("algoIdentifier",2)+"&locationNo=7";
+			$.ajax({
+				type: "GET",
+				url: url,
+				async:false,
+				success: function(msg){
+					//alert(msg);
+					obj = jQuery.parseJSON( ''+ msg +'' );
+					inc1=obj.ResourceUtil[0];
+					inc2=obj.ResourceUtil[2]/1000;
+					inc3=obj.ResourceUtil[1]/1000;
+
+				},
+				error: function () {
+					alert("Error");
+				}
+			});
+			
+			if (chart) {
+				point = chart.series[0].points[0];
+				
+
+				inc = inc1;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 1) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc1);
+			}
+
+			// RAM
+			chart = $('#container-ram-location7').highcharts();
+			if (chart) {
+				point = chart.series[0].points[0];
+				inc = inc2;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 0.768) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc2);
+			}
+
+			// Storage
+			chart = $('#container-storage-location7').highcharts();
+			if (chart) {
+				point = chart.series[0].points[0];
+				inc = inc3;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 7) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc3);
+			}
+		}, 2000);
+	}
+	
+	function populateGuageChartsLocation8()
+	{
+		var gaugeOptions = {
+
+				chart: {
+					type: 'solidgauge'
+				},
+
+				title: null,
+
+				pane: {
+					center: ['50%', '85%'],
+					size: '140%',
+					startAngle: -90,
+					endAngle: 90,
+					background: {
+						backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || '#EEE',
+						innerRadius: '60%',
+						outerRadius: '100%',
+						shape: 'arc'
+					}
+				},
+
+				tooltip: {
+					enabled: false
+				},
+
+				// the value axis
+				yAxis: {
+					stops: [
+					        [0.1, '#55BF3B'], // green
+					        [0.5, '#DDDF0D'], // yellow
+					        [0.9, '#DF5353'] // red
+					        ],
+					        lineWidth: 0,
+					        minorTickInterval: null,
+					        tickPixelInterval: 400,
+					        tickWidth: 0,
+					        title: {
+					        	y: -70
+					        },
+					        labels: {
+					        	y: 16
+					        }
+				},
+
+				plotOptions: {
+					solidgauge: {
+						dataLabels: {
+							y: 5,
+							borderWidth: 0,
+							useHTML: true
+						}
+					}
+				}
+		};
+
+		// The cpu gauge
+		$('#container-cpu-location8').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 2,
+				title: {
+					text: 'CPU'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'CPU',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.2f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GHz</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GHz'
+				}
+			}]
+
+		}));
+
+		// The cpu gauge
+		$('#container-ram-location8').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 1.0,
+				title: {
+					text: 'RAM'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'RAM',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.3f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GB</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GB'
+				}
+			}]
+
+		}));
+
+		// The cpu gauge
+		$('#container-storage-location8').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 0.5,
+				title: {
+					text: 'Storage'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'Storage',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.3f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GB</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GB'
+				}
+			}]
+
+		}));
+
+		// Bring life to the dials
+		setInterval(function () {
+			// CPU
+			var chart = $('#container-cpu-location8').highcharts(),
+			point,
+			newVal,inc1,inc2,inc3,
+			inc;
+
+			
+			var url = globalurl+"currResUtil?algoIdentifier="+sessionStorage.getItem("algoIdentifier",2)+"&locationNo=8";
+			$.ajax({
+				type: "GET",
+				url: url,
+				async:false,
+				success: function(msg){
+					//alert(msg);
+					obj = jQuery.parseJSON( ''+ msg +'' );
+					inc1=obj.ResourceUtil[0];
+					inc2=obj.ResourceUtil[2]/1000;
+					inc3=obj.ResourceUtil[1]/1000;
+
+				},
+				error: function () {
+					alert("Error");
+				}
+			});
+			
+			if (chart) {
+				point = chart.series[0].points[0];
+				
+
+				inc = inc1;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 1) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc1);
+			}
+
+			// RAM
+			chart = $('#container-ram-location8').highcharts();
+			if (chart) {
+				point = chart.series[0].points[0];
+				inc = inc2;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 0.768) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc2);
+			}
+
+			// Storage
+			chart = $('#container-storage-location8').highcharts();
+			if (chart) {
+				point = chart.series[0].points[0];
+				inc = inc3;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 7) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc3);
+			}
+		}, 2000);
+	}
+	function populateGuageChartsLocation9()
+	{
+		var gaugeOptions = {
+
+				chart: {
+					type: 'solidgauge'
+				},
+
+				title: null,
+
+				pane: {
+					center: ['50%', '85%'],
+					size: '140%',
+					startAngle: -90,
+					endAngle: 90,
+					background: {
+						backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || '#EEE',
+						innerRadius: '60%',
+						outerRadius: '100%',
+						shape: 'arc'
+					}
+				},
+
+				tooltip: {
+					enabled: false
+				},
+
+				// the value axis
+				yAxis: {
+					stops: [
+					        [0.1, '#55BF3B'], // green
+					        [0.5, '#DDDF0D'], // yellow
+					        [0.9, '#DF5353'] // red
+					        ],
+					        lineWidth: 0,
+					        minorTickInterval: null,
+					        tickPixelInterval: 400,
+					        tickWidth: 0,
+					        title: {
+					        	y: -70
+					        },
+					        labels: {
+					        	y: 16
+					        }
+				},
+
+				plotOptions: {
+					solidgauge: {
+						dataLabels: {
+							y: 5,
+							borderWidth: 0,
+							useHTML: true
+						}
+					}
+				}
+		};
+
+		// The cpu gauge
+		$('#container-cpu-location9').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 2,
+				title: {
+					text: 'CPU'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'CPU',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.2f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GHz</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GHz'
+				}
+			}]
+
+		}));
+
+		// The cpu gauge
+		$('#container-ram-location9').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 2.0,
+				title: {
+					text: 'RAM'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'RAM',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.3f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GB</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GB'
+				}
+			}]
+
+		}));
+
+		// The cpu gauge
+		$('#container-storage-location9').highcharts(Highcharts.merge(gaugeOptions, {
+			yAxis: {
+				min: 0,
+				max: 0.5,
+				title: {
+					text: 'Storage'
+				}
+			},
+
+			credits: {
+				enabled: false
+			},
+
+			series: [{
+				name: 'Storage',
+				data: [0.0],
+				dataLabels: {
+					format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+					((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.3f}</span><br/>' +
+					'<span style="font-size:12px;color:silver">GB</span></div>'
+				},
+				tooltip: {
+					valueSuffix: 'GB'
+				}
+			}]
+
+		}));
+
+		// Bring life to the dials
+		setInterval(function () {
+			// CPU
+			var chart = $('#container-cpu-location9').highcharts(),
+			point,
+			newVal,inc1,inc2,inc3,
+			inc;
+
+			
+			var url = globalurl+"currResUtil?algoIdentifier="+sessionStorage.getItem("algoIdentifier",2)+"&locationNo=9";
+			$.ajax({
+				type: "GET",
+				url: url,
+				async:false,
+				success: function(msg){
+					//alert(msg);
+					obj = jQuery.parseJSON( ''+ msg +'' );
+					inc1=obj.ResourceUtil[0];
+					inc2=obj.ResourceUtil[2]/1000;
+					inc3=obj.ResourceUtil[1]/1000;
+
+				},
+				error: function () {
+					alert("Error");
+				}
+			});
+			
+			if (chart) {
+				point = chart.series[0].points[0];
+				
+
+				inc = inc1;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 1) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc1);
+			}
+
+			// RAM
+			chart = $('#container-ram-location9').highcharts();
+			if (chart) {
+				point = chart.series[0].points[0];
+				inc = inc2;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 0.768) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc2);
+			}
+
+			// Storage
+			chart = $('#container-storage-location9').highcharts();
+			if (chart) {
+				point = chart.series[0].points[0];
+				inc = inc3;
+				/*newVal = point.y + inc;
+
+				if (newVal < 0 || newVal > 7) {
+					newVal = point.y - inc;
+				}*/
+
+				point.update(inc3);
+			}
+		}, 2000);
+	}
+
+	populateGuageChartsLocation1();
+	populateGuageChartsLocation2();
+	populateGuageChartsLocation3();
+	populateGuageChartsLocation4();
+	populateGuageChartsLocation5();
+	populateGuageChartsLocation6();
+	populateGuageChartsLocation7();
+	populateGuageChartsLocation8();
+	populateGuageChartsLocation9();
+	
+	$("#submit").click(function(){
+		sessionStorage.setItem("algoIdentifier",$("#algorithm").val());
+		
+		
+	});
+	
+	
+	
 	$("#getGraphs").click(function()
 			{
+		
+		
+		
 		/*
 		var obj1 = '{"ReqNoReqTypeRespTime":[[1,1,52.918],[2,1,60.186],[3,1,64.915],[4,1,71.745],[5,1,77.06],[6,1,86.008],[7,2,43.953],[8,2,45.258],[9,2,48.315],[10,2,49.774],[11,2,52.579],[12,3,52.114]]}';
 		var obj2 = '{"ReqNoReqTypeRespTime":[[1,1,52.918],[2,1,60.186],[3,1,64.915],[4,1,71.745],[5,1,77.06],[6,1,86.008],[7,2,43.953],[8,2,45.258],[9,2,48.315],[10,2,49.774],[11,2,52.579],[12,3,52.114]]}';
@@ -2108,7 +4077,8 @@ $( document ).ready(function() {
 		obj2 = eval("(" + obj2 + ')');
 		obj3 = eval("(" + obj3 + ')');
 		obj4 = eval("(" + obj4 + ')');*/
-
+		noOfRequests = $("#request").val();
+		
 		getResponseTimeGraphs();
 		getLocationGraph();
 		getAvgResponseTimeGraphs();

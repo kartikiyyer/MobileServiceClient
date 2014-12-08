@@ -1,0 +1,130 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+@charset "UTF-8";
+
+
+#container{
+	top:550px;
+	position:relative;
+	float:left;
+	margin-left: auto;
+margin-right: auto;
+width: 100%;
+left: 30%;
+
+padding-bottom: 100px;
+
+}
+
+#displayGraphs{
+	position: absolute;
+top: 1800px;
+}
+
+#displayGraphs #speedMeter h1{
+	text-align: center;
+}
+
+ #speedMeter{
+	margin-left: 250px;
+/* margin-right: auto; */
+/* width: 100%; */
+/* margin: auto; */
+}
+
+#contentbox{
+	position: relative;
+	top:330px;
+	margin:0;
+	display: block;
+}
+
+#contentbox1{
+	position: absolute;
+	top:1400px;
+	margin:0;
+	display: block;
+	width: 100%;
+}
+
+#contentbox h2{
+	padding :100px;
+	color:white;
+
+	background-color: #404040;
+	text-align: center;
+	font-size: 60px;
+		margin:0;
+		font-family: sans-serif;
+}
+
+#contentbox1 h2{
+	padding :100px;
+	color:white;
+	background-color: #404040;
+	text-align: center;
+	font-size: 60px;
+		margin:0;
+		font-family: sans-serif;
+}
+
+.select-style {
+	height: 50px;
+    border: 1px solid #ccc;
+    width: 200px;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fafafa url("img/icon-select.png") no-repeat 90% 50%;
+}
+
+.select-style select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+#show {
+   border-top: 1px solid #4b6473;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   padding: 9.5px 19px;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   border-radius: 15px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 18px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+.button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+
+#billing {
+left: 320px;
+position: relative;
+}
