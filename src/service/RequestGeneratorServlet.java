@@ -18,7 +18,7 @@ public class RequestGeneratorServlet extends HttpServlet {
 	HashMap<Integer, Double> cpus = new HashMap<Integer, Double>();
 	HashMap<Integer, Double> hds = new HashMap<Integer, Double>();
 	HashMap<Integer, Double> rams = new HashMap<Integer, Double>();
-	//String server = "localhost";
+//	String server = "localhost";
 	String server = "ubuntu-mc-1-cmpe281.cloudapp.net";
 	//String client  = "localhost";
 	int noOfRequests = 99;
