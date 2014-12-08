@@ -1,4 +1,4 @@
-var globalurl ="http://localhost:8080/LoadBalancer/graphs/";
+var globalurl ="http://ubuntu-mc-1-cmpe281.cloudapp.net:8080/LoadBalancer/graphs/";
 
 $( document ).ready(function() {
 	//var responseData = '{"ReqNoReqTypeRespTime":[[1,1,52.918],[2,1,60.186],[3,1,64.915],[4,1,71.745],[5,1,77.06],[6,1,86.008],[7,2,43.953],[8,2,45.258],[9,2,48.315],[10,2,49.774],[11,2,52.579],[12,2,52.114]]}';
@@ -367,6 +367,7 @@ $( document ).ready(function() {
 	function plotLocationGraph(obj1,obj2,obj3,obj4)
 	{
 		//honeybee
+		//alert(obj1);
 		var honeyBeeRequestType1=[];
 		var honeyBeeRequestType2=[];
 		var honeyBeeRequestType3=[];
@@ -587,7 +588,7 @@ $( document ).ready(function() {
 			}]
 		});
 
-		alert(locationRequestType3.length);
+		//alert(locationRequestType3.length);
 		$('#locationGraph3').highcharts({
 			title: {
 				text: 'Location Based Comparison',
@@ -643,6 +644,7 @@ $( document ).ready(function() {
 			success: function(msg){
 				//alert(msg);
 				obj1 = jQuery.parseJSON( ''+ msg +'' );
+				//alert("obj get locationgraph"+obj1);
 			},
 			error: function () {
 				alert("Error");
