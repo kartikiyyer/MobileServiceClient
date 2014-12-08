@@ -3,21 +3,86 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Request Generator</title>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataTables.jqueryui.css">
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+<script
+	src="http://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+<script src="./js/graphs.js"></script>
 </head>
 <body>
-Request Generator
-<form action="/Client/generate-request" method="post">
-<table>
-<tr>
-<td>Interval</td>
-<td><input type="radio" name="interval" value="1" checked="checked"/>1 hr<input type="radio" name="interval" value="10"/>10 hours<input type="radio" name="interval" value="24"/>1 day </td>
-</tr>
-<tr>
-<td>Algorithm</td>
-<td><input type="radio" name="algorithm" value="1" checked="checked"/>Bee<input type="radio" name="algorithm" value="2"/>Ant<input type="radio" name="algorithm" value="3"/>Location<input type="radio" name="algorithm" value="4"/>Swarm </td>
-</tr>
-</table>
-<input type="submit" value="Submit">
-</form>
+	Request Generator
+	<form action="/Client/generate-request" method="post">
+		<table>
+			<tr>
+				<td>Interval</td>
+				<td><input type="radio" name="interval" value="1"
+					checked="checked" />1 hr<input type="radio" name="interval"
+					value="10" />10 hours<input type="radio" name="interval"
+					value="24" />1 day</td>
+			</tr>
+			<tr>
+				<td>Algorithm</td>
+				<td><input type="radio" name="algorithm" value="1"
+					checked="checked" />Bee<input type="radio" name="algorithm"
+					value="2" />Ant<input type="radio" name="algorithm" value="3" />Location<input
+					type="radio" name="algorithm" value="4" />Swarm</td>
+			</tr>
+		</table>
+		<input type="submit" value="Submit"> <input type="button"
+			id="getGraphs" value="Get Graphs">
+	</form>
+	<div id="reponseTimeGraph1"
+		style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+	<div id="reponseTimeGraph2"
+		style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+	<div id="reponseTimeGraph3"
+		style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+	<div id="locationGraph1"
+		style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+	<div id="locationGraph2"
+		style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+	<div id="locationGraph3"
+		style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+	<div id="avgResponseGraph1"
+		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div>
+	<div id="avgResponseGraph2"
+		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div>
+	<div id="avgResponseGraph3"
+		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div>
+
+<!-- 	<div id="avgResponseGraphH1"
+		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div>
+	<div id="avgResponseGraphH2"
+		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div>
+	<div id="avgResponseGraphH3"
+		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div>
+	<div id="avgResponseGraphH4"
+		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div>
+
+	<div id="avgResponseGraphP1"
+		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div>
+	<div id="avgResponseGraphP2"
+		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div>
+	<div id="avgResponseGraphP3"
+		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div>
+	<div id="avgResponseGraphP3"
+		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div>
+
+	<div id="avgResponseGraphL1"
+		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div>
+	<div id="avgResponseGraphL2"
+		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div>
+	<div id="avgResponseGraphL3"
+		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div>
+	<div id="avgResponseGraphL4"
+		style="min-width: 310px; height: 400px; margin: 0 auto; display: inline-block; float: left"></div> -->
+	<div id="honeyBeeTableDiv"></div>
+	<div id="locationAwareTableDiv"></div>
 </body>
+
 </html>
