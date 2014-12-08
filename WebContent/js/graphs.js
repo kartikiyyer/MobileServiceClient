@@ -778,6 +778,9 @@ $( document ).ready(function() {
 			chart: {
 				type: 'column'
 			},
+			title: {
+	            text: 'HoneyBee'
+	        },
 			subtitle: {
 				text: 'Request Type 1'
 			},
@@ -795,7 +798,7 @@ $( document ).ready(function() {
 			tooltip: {
 				headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
 				pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-				'<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+				'<td style="padding:0"><b>{point.y:.5f} sec</b></td></tr>',
 				footerFormat: '</table>',
 				shared: true,
 				useHTML: true
@@ -814,7 +817,9 @@ $( document ).ready(function() {
 			chart: {
 				type: 'column'
 			},
-
+			title: {
+	            text: 'HoneyBee'
+	        },
 			subtitle: {
 				text: 'Request Type 2'
 			},
@@ -832,7 +837,7 @@ $( document ).ready(function() {
 			tooltip: {
 				headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
 				pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-				'<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+				'<td style="padding:0"><b>{point.y:.5f} sec</b></td></tr>',
 				footerFormat: '</table>',
 				shared: true,
 				useHTML: true
@@ -851,7 +856,9 @@ $( document ).ready(function() {
 			chart: {
 				type: 'column'
 			},
-
+			title: {
+	            text: 'HoneyBee'
+	        },
 			subtitle: {
 				text: 'Request Type 3'
 			},
@@ -869,7 +876,7 @@ $( document ).ready(function() {
 			tooltip: {
 				headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
 				pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-				'<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+				'<td style="padding:0"><b>{point.y:.5f} sec</b></td></tr>',
 				footerFormat: '</table>',
 				shared: true,
 				useHTML: true
@@ -955,6 +962,9 @@ $( document ).ready(function() {
 			chart: {
 				type: 'column'
 			},
+			title: {
+	            text: 'Ant'
+	        },
 			subtitle: {
 				text: 'Request Type 1'
 			},
@@ -972,7 +982,7 @@ $( document ).ready(function() {
 			tooltip: {
 				headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
 				pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-				'<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+				'<td style="padding:0"><b>{point.y:.5f} sec</b></td></tr>',
 				footerFormat: '</table>',
 				shared: true,
 				useHTML: true
@@ -991,7 +1001,9 @@ $( document ).ready(function() {
 			chart: {
 				type: 'column'
 			},
-
+			title: {
+	            text: 'Ant'
+	        },
 			subtitle: {
 				text: 'Request Type 2'
 			},
@@ -1009,7 +1021,7 @@ $( document ).ready(function() {
 			tooltip: {
 				headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
 				pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-				'<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+				'<td style="padding:0"><b>{point.y:.5f} sec</b></td></tr>',
 				footerFormat: '</table>',
 				shared: true,
 				useHTML: true
@@ -1028,7 +1040,9 @@ $( document ).ready(function() {
 			chart: {
 				type: 'column'
 			},
-
+			title: {
+	            text: 'Ant'
+	        },
 			subtitle: {
 				text: 'Request Type 3'
 			},
@@ -1046,7 +1060,7 @@ $( document ).ready(function() {
 			tooltip: {
 				headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
 				pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-				'<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+				'<td style="padding:0"><b>{point.y:.5f} sec</b></td></tr>',
 				footerFormat: '</table>',
 				shared: true,
 				useHTML: true
@@ -1132,6 +1146,9 @@ $( document ).ready(function() {
 			chart: {
 				type: 'column'
 			},
+			title: {
+	            text: 'Location Aware'
+	        },
 			subtitle: {
 				text: 'Request Type 1'
 			},
@@ -1149,7 +1166,7 @@ $( document ).ready(function() {
 			tooltip: {
 				headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
 				pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-				'<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+				'<td style="padding:0"><b>{point.y:.5f} sec</b></td></tr>',
 				footerFormat: '</table>',
 				shared: true,
 				useHTML: true
@@ -1168,7 +1185,9 @@ $( document ).ready(function() {
 			chart: {
 				type: 'column'
 			},
-
+			title: {
+	            text: 'Location Aware'
+	        },
 			subtitle: {
 				text: 'Request Type 2'
 			},
@@ -1186,7 +1205,7 @@ $( document ).ready(function() {
 			tooltip: {
 				headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
 				pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-				'<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+				'<td style="padding:0"><b>{point.y:.5f} sec</b></td></tr>',
 				footerFormat: '</table>',
 				shared: true,
 				useHTML: true
@@ -1205,7 +1224,9 @@ $( document ).ready(function() {
 			chart: {
 				type: 'column'
 			},
-
+			title: {
+	            text: 'Location Aware'
+	        },
 			subtitle: {
 				text: 'Request Type 3'
 			},
@@ -1223,7 +1244,7 @@ $( document ).ready(function() {
 			tooltip: {
 				headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
 				pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-				'<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+				'<td style="padding:0"><b>{point.y:.5f} sec</b></td></tr>',
 				footerFormat: '</table>',
 				shared: true,
 				useHTML: true
@@ -1309,6 +1330,9 @@ $( document ).ready(function() {
 			chart: {
 				type: 'column'
 			},
+			title: {
+	            text: 'PSO'
+	        },
 			subtitle: {
 				text: 'Request Type 1'
 			},
@@ -1326,7 +1350,7 @@ $( document ).ready(function() {
 			tooltip: {
 				headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
 				pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-				'<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+				'<td style="padding:0"><b>{point.y:.5f} sec</b></td></tr>',
 				footerFormat: '</table>',
 				shared: true,
 				useHTML: true
@@ -1345,7 +1369,9 @@ $( document ).ready(function() {
 			chart: {
 				type: 'column'
 			},
-
+			title: {
+	            text: 'PSO'
+	        },
 			subtitle: {
 				text: 'Request Type 2'
 			},
@@ -1363,7 +1389,7 @@ $( document ).ready(function() {
 			tooltip: {
 				headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
 				pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-				'<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+				'<td style="padding:0"><b>{point.y:.5f} sec</b></td></tr>',
 				footerFormat: '</table>',
 				shared: true,
 				useHTML: true
@@ -1382,7 +1408,9 @@ $( document ).ready(function() {
 			chart: {
 				type: 'column'
 			},
-
+			title: {
+	            text: 'PSO'
+	        },
 			subtitle: {
 				text: 'Request Type 3'
 			},
@@ -1400,7 +1428,7 @@ $( document ).ready(function() {
 			tooltip: {
 				headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
 				pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-				'<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+				'<td style="padding:0"><b>{point.y:.5f} sec</b></td></tr>',
 				footerFormat: '</table>',
 				shared: true,
 				useHTML: true
