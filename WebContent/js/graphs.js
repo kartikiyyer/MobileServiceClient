@@ -1874,7 +1874,7 @@ $( document ).ready(function() {
 			$.ajax({
 				type: "GET",
 				url: temp,
-				async:false,
+				//async:false,
 				success: function(msg){
 
 					obj = jQuery.parseJSON( ''+ msg +'' );
@@ -1888,6 +1888,24 @@ $( document ).ready(function() {
 					inData=[];
 					//change for pieChart
 					honeyBeeLocationsArr.push(obj.ReqNoCost[5]);;
+					//pie chart honey bee
+					populatePieChartHoneyBee(honeyBeeLocationsArr);
+					//
+					$('#honeyBeeTableDiv').html( '<h1>HoneyBee Algorithm Costing Model</h1><table cellpadding="0" cellspacing="0" border="0" class="display" id="honeBeeTable"></table>' );
+
+					$('#honeBeeTable').dataTable( {
+						"data":data,
+						"columns": [
+						            { "title": "Request No.", "class": "center" },
+						            { "title": "CPU(GHz)", "class": "center"},
+						            { "title": "Storage(GB)", "class": "center" },
+						            { "title": "RAM(MB)", "class": "center" },
+						            { "title": "Location No.", "class": "center" },
+						            { "title": "Cost($)" }
+						            ],
+						            "bFilter": false
+					} );   
+					
 					//
 
 				},
@@ -1896,23 +1914,7 @@ $( document ).ready(function() {
 				}
 			});
 		}
-		//pie chart honey bee
-		populatePieChartHoneyBee(honeyBeeLocationsArr);
-		//
-		$('#honeyBeeTableDiv').html( '<h1>HoneyBee Algorithm Costing Model</h1><table cellpadding="0" cellspacing="0" border="0" class="display" id="honeBeeTable"></table>' );
-
-		$('#honeBeeTable').dataTable( {
-			"data":data,
-			"columns": [
-			            { "title": "Request No.", "class": "center" },
-			            { "title": "CPU(GHz)", "class": "center"},
-			            { "title": "Storage(GB)", "class": "center" },
-			            { "title": "RAM(MB)", "class": "center" },
-			            { "title": "Location No.", "class": "center" },
-			            { "title": "Cost($)" }
-			            ],
-			            "bFilter": false
-		} );   
+		
 
 	}
 
