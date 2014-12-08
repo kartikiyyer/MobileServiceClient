@@ -750,13 +750,23 @@ $( document ).ready(function() {
 
 		}
 
-		alert("Hi");
+		//alert("Hi");
 		if(obj1.LocReqTypeAvgResTime.length > 0)
 		{
-			honeyBeeBarDataReq1 = honeyBeeBarDataReq1.substring(0, honeyBeeBarDataReq1.length - 1);
-			honeyBeeBarDataReq2 = honeyBeeBarDataReq2.substring(0, honeyBeeBarDataReq2.length - 1);
-			honeyBeeBarDataReq3 = honeyBeeBarDataReq3.substring(0, honeyBeeBarDataReq3.length - 1);
+			if(honeyBeeBarDataReq1.length > 1 )
+			{
+				honeyBeeBarDataReq1 = honeyBeeBarDataReq1.substring(0, honeyBeeBarDataReq1.length - 1);
+			}
 
+			if(honeyBeeBarDataReq2.length > 1 )
+			{
+				honeyBeeBarDataReq2 = honeyBeeBarDataReq2.substring(0, honeyBeeBarDataReq2.length - 1);
+			}
+
+			if(honeyBeeBarDataReq3.length > 1 )
+			{
+				honeyBeeBarDataReq3 = honeyBeeBarDataReq3.substring(0, honeyBeeBarDataReq3.length - 1);
+			}
 		}
 		honeyBeeBarDataReq1 = honeyBeeBarDataReq1+']';
 		honeyBeeBarDataReq2 = honeyBeeBarDataReq2+']';
@@ -927,14 +937,17 @@ $( document ).ready(function() {
 
 		if(obj2.LocReqTypeAvgResTime.length > 0)
 		{
-			antBarDataReq1 = antBarDataReq1.substring(0, antBarDataReq1.length - 1);
-			antBarDataReq2 = antBarDataReq2.substring(0, antBarDataReq2.length - 1);
-			antBarDataReq3 = antBarDataReq3.substring(0, antBarDataReq3.length - 1);
+			if(antBarDataReq1.length>1)
+				antBarDataReq1 = antBarDataReq1.substring(0, antBarDataReq1.length - 1);
+			if(antBarDataReq2.length>1)
+				antBarDataReq2 = antBarDataReq2.substring(0, antBarDataReq2.length - 1);
+			if(antBarDataReq3.length>1)
+				antBarDataReq3 = antBarDataReq3.substring(0, antBarDataReq3.length - 1);
 		}
 		antBarDataReq1 = antBarDataReq1+']';
 		antBarDataReq2 = antBarDataReq2+']';
 		antBarDataReq3 = antBarDataReq3+']';
-		
+
 		//alert(antBarData);
 		//var temp = JSON.parse(antBarData);
 		temp = eval("(" + antBarDataReq1 + ')');
@@ -1100,9 +1113,12 @@ $( document ).ready(function() {
 		}
 		if(obj3.LocReqTypeAvgResTime.length > 0)
 		{
-			locationAwareBarDataReq1 = locationAwareBarDataReq1.substring(0, locationAwareBarDataReq1.length - 1);
-			locationAwareBarDataReq2 = locationAwareBarDataReq2.substring(0, locationAwareBarDataReq2.length - 1);
-			locationAwareBarDataReq3 = locationAwareBarDataReq3.substring(0, locationAwareBarDataReq3.length - 1);
+			if(locationAwareBarDataReq1.length > 1)
+				locationAwareBarDataReq1 = locationAwareBarDataReq1.substring(0, locationAwareBarDataReq1.length - 1);
+			if(locationAwareBarDataReq2.length > 1)
+				locationAwareBarDataReq2 = locationAwareBarDataReq2.substring(0, locationAwareBarDataReq2.length - 1);
+			if(locationAwareBarDataReq3.length > 1)
+				locationAwareBarDataReq3 = locationAwareBarDataReq3.substring(0, locationAwareBarDataReq3.length - 1);
 
 		}
 
@@ -1274,9 +1290,12 @@ $( document ).ready(function() {
 		}
 		if(obj4.LocReqTypeAvgResTime.length > 0)
 		{
-			psoBarDataReq1 = psoBarDataReq1.substring(0, psoBarDataReq1.length - 1);
-			psoBarDataReq2 = psoBarDataReq2.substring(0, psoBarDataReq2.length - 1);
-			psoBarDataReq3 = psoBarDataReq3.substring(0, psoBarDataReq3.length - 1);
+			if(psoBarDataReq1.length > 1)
+				psoBarDataReq1 = psoBarDataReq1.substring(0, psoBarDataReq1.length - 1);
+			if(psoBarDataReq2.length > 1)
+				psoBarDataReq2 = psoBarDataReq2.substring(0, psoBarDataReq2.length - 1);
+			if(psoBarDataReq3.length > 1)
+				psoBarDataReq3 = psoBarDataReq3.substring(0, psoBarDataReq3.length - 1);
 
 		}
 
@@ -1411,7 +1430,7 @@ $( document ).ready(function() {
 			url: url+temp,
 			async:false,
 			success: function(msg){
-				alert(msg);
+				//alert(msg);
 				obj1 = jQuery.parseJSON( ''+ msg +'' );
 
 				plotAvgResponseTimeGraphHoneyBee(obj1);
@@ -1429,7 +1448,7 @@ $( document ).ready(function() {
 			url: url+temp,
 			async:false,
 			success: function(msg){
-				alert(msg);
+				//alert(msg);
 				obj2 = jQuery.parseJSON( ''+ msg +'' );
 
 				plotAvgResponseTimeGraphAnt(obj2);	
@@ -1447,7 +1466,7 @@ $( document ).ready(function() {
 			url: url+temp,
 			async:false,
 			success: function(msg){
-				alert(msg);
+				//alert(msg);
 				obj3 = jQuery.parseJSON( ''+ msg +'' );
 
 				plotAvgResponseTimeGraphPSO(obj3);
@@ -1466,7 +1485,7 @@ $( document ).ready(function() {
 			url: url+temp,
 			async:false,
 			success: function(msg){
-				alert(msg);
+				//alert(msg);
 				obj4 = jQuery.parseJSON( ''+ msg +'' );
 				plotAvgResponseTimeGraphLocationAware(obj4);
 			},
